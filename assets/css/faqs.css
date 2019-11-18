@@ -39,6 +39,9 @@
     height: 130px;
     margin: auto;
 }
+.item-faq > a {
+    margin: auto;
+}
 
 
 .tile > .tiletext {
