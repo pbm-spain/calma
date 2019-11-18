@@ -42,6 +42,7 @@
 
 
 .tile > .tiletext {
+    text-align: center;
     margin: auto;
     text-transform: uppercase;
     color: #C7A9A4;
