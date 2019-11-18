@@ -1,0 +1,67 @@
+
+main {
+    margin: 20px;
+}
+h1 {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C7A9A4;
+}
+
+
+.masajes-container > .masaje-item > .tipo-masaje{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.masajes-container > .masaje-item > .tipo-masaje > p {
+    font-size: 14px; 
+    letter-spacing: 0.05em;
+}
+
+.precios-button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.precios-button > button {
+    padding: 0 5px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@media (min-width: 769px) {
+
+    .masajes-container {
+        display: flex;
+        flex-flow: wrap;
+    }
+    .masajes-container > .primer-masaje {
+        flex: 0 0 100%; 
+    }
+
+    .masajes-container > .primer-masaje > .tipo-masaje {
+        margin: auto;
+    }
+    .masajes-container > .masaje-item.segundo-masaje {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .masajes-container > .masaje-item.segundo-masaje > .tipo-masaje{
+        padding-right: 100px;
+    }
+    .masajes-container > .masaje-item.tercer-masaje > .tipo-masaje{
+        padding-left: 100px;
+    }
+
+    .masajes-container > .segundo-masaje, .masajes-container > .tercer-masaje  {
+        flex: 0 0 50%; 
+    }
+    .masajes-container > .masaje-item > .tipo-masaje {
+        max-width: 322px;
+    }
+
+}

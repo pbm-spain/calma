@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.primary-block, .third-block {
+    display: flex;
+}
+
+.primary-item {
+    height: 502px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index:0;
+}
+.primary-item::before {
+    content: "";
+    background-color: #fff;
+    opacity: 0.2;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    z-index: -1;
+}
+
+.primary-item-one {
+    order: 1;
+    background-image: url("../../assets/img/masajes.jpeg");
+}
+
+.primary-item-two {
+    order: 2;
+    background-image: url("../../assets/img/tarifas.jpeg");
+    position: relative;
+}
+
+.primary-item-one > .primary-item-one-content  {
+    width: 317px;
+    height: 40%;
+    margin-left: 11px;
+}
+.primary-item-one > .primary-item-one-content > h2, .primary-item-two-content > h2 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+}
+.primary-item-two-content {
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    padding: 0px 15px;
+}
+
+.primary-item-two-content > h2 {
+    line-height: 5px;
+}
+.primary-item-one-link, .primary-item-two-link {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.5em;
+/*    transform: translateY(-50%);*/
+}
+.primary-item-two-link {
+    margin-top: 40%;
+}
+h1  {
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.primary-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    width: 176px;
+    height: 39px;
+}
+.third-block > div.primary-item.primary-item-one {
+    background-image: url("../../assets/img/opiniones.jpg");
+    color: #000;
+}
+.third-block > div.primary-item.primary-item-two {
+    background-image: url("../../assets/img/preguntas-frecuentes.jpeg");
+
+}
+.third-block > div.primary-item.primary-item-two > div {
+    margin-top: initial;
+}
+.third-block > div.primary-item.primary-item-one > div > h1, body > main > div.third-block > div.primary-item.primary-item-one > div > button{
+    color: #000;
+    border-color: #000;
+}
+
+.button-inverted {
+    color: #000;
+    border-color: #000;
+}
+
+.button-mobile {
+    width: auto;
+}
+
+
+
+.fourth-block {
+    margin-top: 30px;
+}
+.fourth-block > .items-container > .item-end {
+    display: flex; 
+    width: 150px;
+    height: 150px;
+    background-color: #C7A9A4;
+    border-radius: 100%;
+}
+
+.items-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+
+}
+.tile {
+    display: flex; 
+    margin:  auto;
+    width: 130px;
+    height: 130px;
+    background-color: #C7A9A4;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.item-left {
+    margin-right: 20px;
+}
+.item-rigth {
+    margin-left: 20px;
+}
+
+.tile > .tiletext {
+    margin: auto;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+}
+
+@media (max-width: 667px){
+    body {
+        margin: 0px;
+    }
+    .primary-block {
+        flex-direction: column
+    }
+
+    .primary-item {
+        width: 100%;
+        height: 100vh;
+    }
+    .primary-item::before {
+        height: 100vh;
+        top: inherit;
+    }
+
+
+    .primary-item-one {
+        order: 1;
+    }
+    .primary-item-two {
+        order: 2;
+    }
+    .primary-item-two-link{
+        margin-top: 40vh;
+    }
+    .secondary-block {
+        display: none;
+    }
+    .third-block > div.primary-item.primary-item-one {
+        display: none;
+    }
+    .third-block > div.primary-item.primary-item-two {
+        background-image: url("../../assets/img/opiniones.jpg");
+    }
+    .third-block h1, .third-block button{
+        color: #000;
+        border-color: #000;
+    }
+}
+
+@media (min-width: 667px){
+    
+    body {
+        margin: 0px;
+    }
+    .back {
+        display: none;
+    }
+    .primary-block, .third-block {
+        width: 1100px;
+        margin: auto;
+        height: 502px;
+    }
+
+    .primary-item-one {
+        margin-right: 11px;
+    }
+    .primary-item-two {
+        margin-left: 11px;
+    }
+
+    .secondary-block {
+        background-image: url("../../assets/img/contacto-galeria.jpeg");
+        height: 546px;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+    }
+    .first-column, .second-column {
+    width: 250px;
+    height: 444px;
+    border: 1px solid #C7A9A4;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+    }
+    .column-content {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+    }
+    .column-content > h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 31px;
+        text-align: center;
+        letter-spacing: 0.3em;
+        width: 100%;
+    }
+    .first-column {
+        margin-right: 100px;
+    }
+    .second-column {
+        margin-left: 100px;
+    }
+}
+
+
+
+/* Contacto */
+
+.contacto-main {
+    margin: 20px;
+}
+.contacto-container h1 {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C7A9A4;
+}
+
+
+.contacto-container > .contacto-item > .elemento-contacto{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contacto-container > .contacto-item > .elemento-contacto > p {
+    font-size: 14px; 
+    letter-spacing: 0.05em;
+}

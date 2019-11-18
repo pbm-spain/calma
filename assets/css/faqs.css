@@ -1,0 +1,130 @@
+.back {
+    margin-left: 20px;
+}
+.fourth-block {
+    margin-top: 30px;
+}
+/*
+.fourth-block > .items-container > .item-end {
+    flex: 1 0 0;
+}*/
+
+.asunto-container {
+    display: flex;
+    justify-content: space-between;
+}
+.item-faq {
+    display: flex; 
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 2px solid #C7A9A4;
+    border-radius: 0%;
+}
+.faq-item-left {
+    margin-right: 0px;
+    margin-right: 10px;
+}
+.faq-item-rigth {
+    margin-left: 0px;
+    margin-left: 10px;
+}
+
+.tile-faq {
+    border-radius: 0%;
+    border: 1px solid #C7A9A4;
+    background-color: #fff;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+}
+
+
+.tile > .tiletext {
+    margin: auto;
+    text-transform: uppercase;
+    color: #C7A9A4;
+}
+
+.mas-preguntas > p {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.0em;
+    text-align: center;
+}
+
+
+
+/* Faq Reservas */ 
+
+.faq-reservas-container {
+    margin: 20px;
+}
+
+.faq-reservas-container > details {
+    margin-bottom: 10px;
+}
+
+details {
+    border-bottom: solid 1px #C7A9A4;
+}
+summary{
+    outline:none;
+  }
+
+details summary {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+details summary::-webkit-details-marker {
+    display:none;
+  }
+
+  summary:after {
+    border-radius: 5px;
+    content: "+";
+    color: #C7A9A4;
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+  }
+  @keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.25em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+details[open] {
+    color: #C7A9A4;
+    font-weight: bold;
+}
+details[open] > p {
+    animation-name: fadeInDown;
+    animation-duration: 0.5s;
+    font-weight: initial;
+    color: #000;
+}
+
+  details[open] summary:after {
+    content: "-";
+  }
+
+  details > p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+  }
